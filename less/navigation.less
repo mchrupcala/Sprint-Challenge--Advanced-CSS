@@ -1,1 +1,42 @@
 // Navigation code here
+
+.nav-section{
+  width: 40%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media @phone {
+    .mixPhone();
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    @mobile @phone {
+      .mixPhone();
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    @media @phone {
+      font-size: 15px;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+  }
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
