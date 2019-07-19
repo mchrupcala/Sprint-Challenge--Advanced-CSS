@@ -1,4 +1,4 @@
-# Sprint Challenge: Advanced CSS - Space Walkers Web Page
+<!--# Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
@@ -14,8 +14,8 @@ You have three hours to complete this challenge. Plan your time accordingly.
 
 ## Commits
 
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project manager.
-
+Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project manager. -->
+<!--
 ## Description
 
 The client for this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
@@ -24,7 +24,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your we
 
 [Click here to review the home design](design-files/home-desktop.png)
 
-[Click here to review the mobile design](design-files/home-mobile.png)
+[Click here to review the mobile design](design-files/home-mobile.png) -->
 
 ## Self-Study Questions
 
@@ -34,20 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  A: An adaptive website would offer two or three different fixed states, or layouts, for the browser window to fold into. But those are the only options....say, mobile vs tablet vs desktop. Fully responsive design would mean that all the elements of the page will dynamically fit into whatever screen size/browser size the user has. It's more fluid this way...instead of the few cookie-cutter layouts available in adaptive design.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+  A: These refer to the way that the index & stylesheets were originally written. Mobile-first means they were designed to a 500px screen size (for example), and then media breakpoints were added to expand the screen for desktops. Desktop-first means the opposite...it was designed for mobile, and then adapted for mobile.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+  A: It takes the default font size of most browsers and sets it to 10px. Then when I use rem units, I can size them with base 10px (so 2.0rem = 20px).
+
 4. How would you describe preprocessing to someone new to CSS?
 
+  A: Preprocessing is a way to write cleaner & better-organized CSS. If you use a preprocessor, you'll write in a new document (that has a new syntax) instead of your usual index.css file...then software will convert your new syntax into a CSS file like you'd typically use.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+  A: mixins! They're awesome, they save me a lot of time by condensing my repeat-code. Nesting is also really useful but it's a time-suck for me when I confuse different brackets and write my code out of order.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
 Follow these steps to set up your project:
-
+<!--
 ### Git Set up
 
 - [ ] Create a forked copy of this project.
@@ -56,14 +66,14 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+ -->  <!--
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+- [ ] Your project manager will count the project as complete by merging the branch back into master. -->
 
+<!--
 ### Preprocessor Set up
 
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
@@ -120,7 +130,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Push your changes and create a pull request if you haven't already.
 
-In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
+In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not. -->
 
 ## Stretch Problems
 

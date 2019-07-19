@@ -1,7 +1,8 @@
 // Home Content
 
 .home {
-
+  margin-top: 30px;
+  padding-top: 10px;
   .intro {
 
     h2 {
@@ -11,7 +12,55 @@
     p {
       padding:0 15px;
     }
-  
+
+    img {
+      @media @phone {
+        .mixPhone();
+        height: auto;
+      }
+    }
+
+    .newsletter {
+
+      padding: 10px;
+      margin: 10px;
+      animation-name: twinkle;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      h3 {
+        margin: 10px auto;
+        width: 55%;
+        text-align: center;
+        background-color: rgba(65,105,225,0.25);
+      }
+      p {
+        margin: 10px auto;
+        width: 77%;
+      }
+
+      .news-form {
+        margin: 5px auto;
+        width: 40%;
+        font-size: 20px;
+
+        button {
+        .mixButton(@color: white, @bg-color: @btn-bg-color, @width: 30%);
+        border-radius: 5px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      }
+
+      @keyframes twinkle {
+        0%  {border: 2px dashed blue;}
+        25% {border: 2px dashed yellow;}
+        50% {border: 2px dashed red;}
+        75% {border: 2px dashed purple;}
+        100% {border: 2px dashed gold;}
+      }
+    }
+
   }
 
   .space-images {
@@ -24,8 +73,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
+      }
+    .gone {
+      @media @phone {
+        display: none;
+      }
     }
-  }
+    }
 
   .visit-planets {
     padding: 15px;
@@ -46,9 +103,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .mixPhone();
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 5%;
+    }
+
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        .mixPhone();
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,13 +124,36 @@
       }
 
       .btn {
+        button {
+        .mixButton(@color: white, @bg-color: @btn-bg-color, @width: 30%);
+        border-radius: 5px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 15px;
+
+          @media @phone {
+            width: 100%;
+            height: 45px;
+          }
+        }
+        button:hover {
+          background: lighten(@btn-bg-color, 50%);
+          cursor: pointer;
+          color: black;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        .mixPhone();
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
       img {
         width: 100%;
         height: auto;

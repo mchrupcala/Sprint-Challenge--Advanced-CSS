@@ -1,1 +1,54 @@
 // Navigation code here
+
+.nav-section{
+  }
+
+  .nav-bar {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(88,88,88, 0.75);
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @mobile @phone {
+      .mixPhone();
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    @media @phone {
+      font-size: 15px;
+    }
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: black;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+  }
+  .centered {
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @phone {
+      .mixPhone();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
