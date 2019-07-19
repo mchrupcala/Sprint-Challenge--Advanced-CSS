@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 .nav-section {
-  width: 40%;
+  width: 60%;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
@@ -184,6 +184,7 @@ p {
 .nav-section a {
   text-decoration: none;
   color: black;
+  font-size: 15px;
 }
 @media (max-width: 500px) {
   .nav-section a {
@@ -191,7 +192,7 @@ p {
   }
 }
 .nav-section h1 {
-  font-size: 30px;
+  font-size: 35px;
   margin: 10px auto;
   width: 80%;
   text-align: center;
@@ -291,6 +292,8 @@ footer {
   width: 30%;
   border-radius: 5px;
   height: 30px;
+  font-weight: bold;
+  font-size: 15px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
