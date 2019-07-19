@@ -1,7 +1,8 @@
 // Home Content
 
 .home {
-
+  margin-top: 30px;
+  padding-top: 10px;
   .intro {
 
     h2 {
@@ -16,6 +17,47 @@
       @media @phone {
         .mixPhone();
         height: auto;
+      }
+    }
+
+    .newsletter {
+
+      padding: 10px;
+      margin: 10px;
+      animation-name: twinkle;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      h3 {
+        margin: 10px auto;
+        width: 55%;
+        text-align: center;
+        background-color: rgba(65,105,225,0.25);
+      }
+      p {
+        margin: 10px auto;
+        width: 77%;
+      }
+
+      .news-form {
+        margin: 5px auto;
+        width: 40%;
+        font-size: 20px;
+
+        button {
+        .mixButton(@color: white, @bg-color: @btn-bg-color, @width: 30%);
+        border-radius: 5px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      }
+
+      @keyframes twinkle {
+        0%  {border: 2px dashed blue;}
+        25% {border: 2px dashed yellow;}
+        50% {border: 2px dashed red;}
+        75% {border: 2px dashed purple;}
+        100% {border: 2px dashed gold;}
       }
     }
 
